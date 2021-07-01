@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,356 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="pictures/geo-background-6.png" data-background-color="#FFF" data-background-opacity="1">
+					<div style="background-color:rgba(255,255,255,0.9); padding:30px; border-radius: 30px">
+						<h4>How's Shelby the Turtle Today?</h4>
+						<h3>Animal-Tracking Maps and Environmental Communication</h3><br>
+						<p>
+							<small>Matt Ziegler, Michael Quinlan, Zage Strassberg-Phillips, Manasi Shah, Lauren Vreeken, Chris Jones, Karen Goodfellow, Jes Lefcourt, RIchard Anderson, Kurtis Heimerl</small>
+						</p>
+						<!--<p>University of Washington &bull; EarthRanger</p>-->
+						<div style="vertical-align:middle">
+							<img src="pictures/uw-logo-centered.png" style="width:40%; height:auto; vertical-align:middle; padding-right:1em;">
+							<img src="pictures/LogoEarthRanger.png" style="width:30%; height:auto; vertical-align:middle; padding-left:1em; padding-right:1em">
+						</div>
+					</div>
+				</section>
+
+				<section data-background-image="pictures/giraffe-prototype-1.png">
+				</section>
+
+				<section>
+					<h3>Animal-tracking maps</h3>
+					<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-ocearch-3.png');width:100%;height:200px;"></div>&copy; OCEARCH</div>
+					<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-ocearch.png');width:100%;height:200px;"></div>&copy; OCEARCH</div>
+					<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-monkey-4.png');width:100%;height:200px;"></div>&copy; Wild Capuchin Foundation</div>
+					<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-motus.png');width:100%;height:200px;"></div>&copy; MOTUS</div>
+					<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-wwf-1.png');width:100%;height:200px;"></div>&copy; WWF</div>
+					<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-polar-bears-1.png');width:100%;height:200px;"></div>&copy; Polar Bears International</div>
+				</section>
+
+				<!--
+				<section>
+					Animal tracking maps
+					- lots more animal tracking, better technology, more organizations doing it
+					- lots of organizations making them 
+					- interactive data visualizations, as organizations share more data 
+					- supply-side push 
+				</section>
+				-->
+
+				<section data-background-color="#030317" style="color:white">
+					
+					The "big but" for interactive data visualizations:
+					<h2 style="color:white">Disappointing engagement?</h2><br>
+					<ul>
+						<li class="fragment">New York Times: 85-90% of users don't engage with interactive visualizations at all</li>
+						<li class="fragment">Short visits: usually under 1-2 minutes</li> <!-- hard to take advantage of affordances -->
+						<li class="fragment">Expensive to make</li>
+					</ul>
+				</section>
+
+				<section data-background-image="pictures/geo-background-2.png" data-background-color="#030317" style="color:white">
+					<p style="font-size:135%; color:white">How can wildlife tracking maps advance environmental communication goals?</p>
+					<br>
+					
+					<ul>
+						<li class="fragment" style="list-style-type:none; font-size:70%">This talk:</li>
+						<li class="fragment">Environmental communication</li>
+						<!--<li class="fragment">Interactive data viz as a medium</li>-->
+						<li class="fragment">Conservationist &amp; user perspectives</li>
+						<li class="fragment">Recommendations</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="pictures/SilentSpring.jpg" style="width:20%;height:auto; float:left">
+					<h3 style="text-align:right">Environmental communication</h3>
+					<ul style="width:60%">
+						<li class="fragment">Large academic field</li>
+						<li class="fragment">Goal: media for culture change</li>
+						<li class="fragment">Current focus on collective action</li>
+					</ul>
+				</section>
+
+				<section data-background-image="pictures/geo-background-7-2.png" style="text-align:left">
+					<h3>Environmental Comms. Best Practices</h3>
+					<ul>
+						<li class="fragment">Emotions: cultivate hope, avoid anxiety</li>
+						<li class="fragment">Conversations towards collective action</li>
+						<li class="fragment">Continuous awareness</li>
+						<li class="fragment">Relationships with audience</li>
+						<li class="fragment">Avoid controversy</li>
+						<li class="fragment">Relatability: tell local stories, focus on people</li>
+					</li>
+				</section>
+
+				<!--<section data-background-image="pictures/geo-background-3.png" data-background-color="black" data-background-opacity="0.3" style="color:white">
+					<h3 style="color:white">Interactive data viz for storytelling</h3>
+					<ul>
+						<li>Becoming popular; big community</li>
+						<li class="fragment">Disappointing engagement...</li>
+						<li class="fragment">...But great for highly-motivated audiences:
+							<ul>
+								<li class="fragment">drill-down to details</li>
+								<li class="fragment">filtering and exploring</li>
+								<li class="fragment">testing own hypothesis</li>
+								<li class="fragment">credibility</li>
+						</li>
+					</ul>
+				</section>-->
+
+				<section>
+					<h2>Qualitative study</h2>
+					<ol style="font-size:130%">
+						<li>User sessions</li>
+						<li>Conservationist focus groups</li>
+					</ol>
+					<img src="pictures/gcf-logo.png" style="width:20%; height:auto; border:none; vertical-align:middle; margin-right: 1em; padding-left:1em">
+					<img src="pictures/awsc-logo.jpg" style="width:45%; height:auto; border:none; vertical-align:middle">
+				</section>
+
+				<section data-background-image="pictures/geo-background-desert-1.png" data-background-color="white" data-background-opacity="0.7">
+					<h2>Audience segments</h2>
+					
+					<div style="padding:20px; margin-bottom:20px; background-color:rgba(255,255,255,0.9); border-radius:10px; text-align:left">
+						<h4 style="text-align:center">General public</h4>
+						<ul style="font-size:70%" class="fragment">
+							<li>Big learning curve: interface + data interpretation</li>
+							<li>Hurdle for short attention spans</li>
+						</ul>
+					</div>
+
+					<div style="padding:20px; margin-bottom:20px; background-color:rgba(255,255,255,0.9); border-radius:10px; text-align:left">
+						<h4 style="text-align:center">Existing dedicated audiences</h4>
+						<ul style="font-size:70%" class="fragment">
+							<li>Highly-motivated users can take advantages of interactive affordances: freely exploring, drilling down to details, testing own hypothesis
+								<blockquote style="background-color:beige">
+									They just love giraffe, they love reading anything we do... and they would love seeing something like this.
+								</blockquote>
+							</li>
+						</ul>
+					</div>
+					
+				</section>
+
+				<section data-background-image="pictures/geo-background-desert-2.png" data-background-color="white" data-background-opacity="0.7">
+					<h2>Data Interpretation</h2>
+					<div style="padding:20px; margin-bottom:20px; background-color:rgba(255,255,255,0.9); border-radius:10px; text-align:left; font-size:90%">
+						<ul>
+							<li>Participants struggled to find meaning in the GPS data
+							
+								<div style="margin-top:30px; margin-left:5em; margin-right: 1em; width:30%; display:inline-block; text-align:center;font-size:65%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/example-ocearch.png');width:100%;height:150px;text-align:left;font-size:70%">&copy; OCEARCH</div>Many noted the animals' vast travel distances...</div>
+
+								<div style="margin-top:30px; margin-left:1em; margin-right: 1em; width:30%; display:inline-block; text-align:center;font-size:65%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('pictures/hairball.png');width:100%;height:150px;"></div>...but not much else.<br><br></div>
+							
+							</li>
+							<li class="fragment">Contextual information was not well-integrated
+								<blockquote style="font-size:70%; background-color:beige">
+									I guess what I got out of it, I think I could have also gotten out of a PowerPoint... I don't think that the actual geospatial component was integrated into the other component.
+								</blockquote>
+							</li>
+						</ul>
+					</div>
+					
+				</section>
+
+				<section data-background-image="pictures/geo-background-desert-4.png" data-background-color="white" data-background-opacity="0.7">
+					<h2>Relatability</h2>
+					<div style="padding:20px; margin-bottom:20px; background-color:rgba(255,255,255,0.9); border-radius:10px; text-align:left; font-size:90%">
+					<ul>
+						<li>Conservationists want users to empathize with the maps's animals:
+							<blockquote style="font-size:70%; background-color:beige">
+							...just allowing people to get to know these sharks as as individuals. You know, relating to them as animals that have a tough life, that struggle. We have a lot of white sharks that have been hit by boats.... People don’t tend to think of these animals that way a lot of times.
+							</blockquote>
+						</li>
+
+						<li class="fragment">
+							But users felt more connected through the pictures and videos than the data
+							<!--<blockquote style="font-size:70%; background-color:beige">I felt like I was getting a ground view... I'm seeing real life pictures, and the videos that the researchers and observers took</blockquote>-->
+						</li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background-image="pictures/geo-background-desert-3.png" data-background-color="white" data-background-opacity="0.7">
+					<h2>User takeaways</h2>
+					<div style="padding:20px; margin-bottom:20px; background-color:rgba(255,255,255,0.9); border-radius:10px; text-align:left; font-size:90%">
+					
+					<ul>
+						<li class="fragment">
+							<b>Learning:</b> about both the animals and research
+							<blockquote style="font-size:70%; background-color:beige">
+							I learned a lot about how tracking animals works... I saw that you get a ping when they come to the surface and data is transferred!?
+							</blockquote>
+						</li>
+
+						<li class="fragment">
+							<b>Emotions:</b> some claimed no emotional response, some happy to see the conservation work:
+							<blockquote style="font-size:70%; background-color:beige">
+							It's nice to know with the WWF that they're doing a lot of work around the world... so that's a little bit of optimism.
+							</blockquote>
+						</li>
+					
+						<li class="fragment">
+							<b>Actions:</b> most didn't know what actions to take; some wanted to learn more
+						</li>
+					</ul>
+
+					</div>
+				</section>
+
+
+				<section data-background-image="pictures/geo-background-5.png" style="color:white">
+					<h2 style="color:white">Summary</h2>
+					<h4 style="color:white">Wildlife Tracking Maps and Environmental Communication</h4>
+					<ul style="font-size:85%">
+						<li class="fragment">Data is not relatable &mdash; Integration with other media is key</li>
+						<li class="fragment">Continuously engage dedicated audiences with updates</li>
+						<li class="fragment">Attract casual audiences to other communication channels</li>
+						<li class="fragment">Show off organization's work &mdash; Inspire optimism</li>
+						<li class="fragment">Details &amp; recommendations in paper</li>
+					</ul>
+				</section>
+
+
+				<!--
+				<section>
+					<h4 style="margin-bottom:0">Conservationist aspirations</h4>
+					<h3>Why wildlife-tracking maps?</h3>
+					<ul>
+						<li class="fragment">Reach new audiences &amp; general public</li>
+						<li class="fragment">Engage sharkies and giraffe lovers</li>
+						<li class="fragment">Prior good experiences showing tracking data</li>
+						<li class="fragment">Idea that maps are intuitive</li>
+					</ul>
+				</section>
+				-->
+
+				<!--
+				<section>
+					<h4 style="margin-bottom:0">Conservationist aspirations</h4>
+					<h3>Why wildlife-tracking maps?</h3>
+					<ul>
+						<li class="fragment">Connection with individual animals;give vivid window into their lives; talked at length</li>
+						<li class="fragment">
+							Excited about their own data:
+							<blockquote style="font-size:70%">
+							When I'm not in the field, opening this is a part of my morning routine, and I'll have my cup of coffee and see where the giraffe are. In the absence of actually seeing giraffe in the field, it's just a spark of joy.
+							</blockquote>
+						</li>
+						<li class="fragment">Show organization's work</li>
+						
+					</ul>
+				</section>
+				-->
+
+				<!--
+				<section>
+					<h3>User sessions</h3>
+					<ul>
+						<li class="fragment">Participants took time to understand maps/data/interfaces</li>
+						<li class="fragment">
+							Difficulty interpreting geospatial data:
+
+						</li>
+						<li class="fragment"><i>"Right off the bat, I didn’t realize there were sharks that went literally from Miami to Maine"</i></li>
+						<li class="fragment"><i>"I didn’t really see the purpose of it"</i></li>
+
+					</ul>
+
+				</section>
+
+			-->
+
+				<!--
+				<section>
+					<h3>User sessions</h3>
+					<ul>
+						<li class="fragment">Emotional reactions: none, happy to see conservation work, animals were cute</li>
+						<li class="fragment">Most felt more connected through pictures and videos than the data itself:
+							<blockquote style="font-size:70%">
+								I guess what I got out of it, I think I could have also gotten out of a PowerPoint... I don't think that the actual geospatial component was integrated into the other component.
+							</blockquote>
+						</li>
+						<li class="fragment">Most reported learning more about the tracking projects than the actual animals</li>
+						<li class="fragment">Most didn't know how to take action; some wanted to learn more</li>
+
+						
+
+					</ul>
+
+				</section>
+			-->
+
+			<!--
+				<section>
+					<h2>Takeaways</h2>
+					<ol style="font-size:130%">
+						<li>Interactive data visualizations and environmental communication</li>
+						<li>Wildlife-tracking map design considerations</li>
+					</ol>
+				</section>
+			-->
+
+			<!--
+				<section>
+					<h3>Interactive Data Visualizations and Environmental Communication</h3>
+					<div style="display:inline-block; width:48%; border:solid 1px black;">
+						<h4>New, casual audiences</h4>
+						<ul style="font-size:85%">
+							<li class="fragment">Data is not relatable</li>
+							<li class="fragment">Attracts audiences to other communication channels</li>
+							<li class="fragment">Visual appeal is important</li>
+							<li class="fragment">Shows scope of work</li>
+						</ul>
+					</div>
+					<div style="display:inline-block; width:48%; border:solid 1px black;">
+						<h4>Dedicated audiences</h4>
+						<ul style="font-size:85%">
+							<li class="fragment">Highly-motivated users can engage much more deeply</li>
+							<li class="fragment">Create continuous conversations by updating data</li>
+						</ul>
+					</div>
+				</section>
+
+
+
+				<section>
+					<h3>Design considerations</h3>
+					<ol>
+						<li class="fragment">
+							User onboarding
+						</li>
+						<li class="fragment">
+							Challenge: Giving context  &amp; meaning to data
+						</li>
+						<li class="fragment">
+							Creative integration of more-relatale media
+						</li>
+						<li class="fragment">
+							Great potential for social media integration
+						</li>
+						<li class="fragment">
+							"Adopt an animal" fundraisers
+						</li>
+						<li class="fragment">
+							Access limitations
+						</li>
+					</ol>
+				</section>
+			-->
+
+				<section data-background-image="pictures/giraffe-prototype-2.png">
+					<div style="background-color:rgba(255,255,255,1); padding:0; border-radius: 20px; display:inline-block">
+						<h1>Thanks!</h1>
+						<div style="vertical-align:middle;">
+							<img src="pictures/uw-logo-centered.png" style="width:40%; height:auto; vertical-align:middle; padding-right:1em;">
+							<img src="pictures/LogoEarthRanger.png" style="width:30%; height:auto; vertical-align:middle; padding-left:1em; padding-right:1em">
+						</div>
+					</div>
+				</section>
+
 			</div>
 		</div>
 
@@ -31,6 +379,10 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				transition: 'fade',
+				progress: false,
+				slideNumber: 'c/t',
+				controls: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
